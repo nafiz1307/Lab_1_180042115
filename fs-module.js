@@ -33,7 +33,7 @@ const fs = require("fs");
 // });
 
 
-console.log("before");
+// console.log("before");
 
 // fs.readFile("./contents/renamedFile.txt", "utf-8", (err, data) => {
 //   if (err) {
@@ -53,23 +53,27 @@ console.log("before");
 //   }
 // });
 
-fs.readFile("./contents/renamedFile.txt", "utf-8", (err,data)=>{
-    if(err){
-        console.log(err);
-    } else{
-        fs.appendFile(
-            "./contents/renamedFile.txt",
-            "Checking Synchronous Process",
-            (err)=>{console.log(err);}
-        );
-        fs.readFile("./contents/renamedFile.txt", "utf-8",(err,data)=>{
-            if(err){
-                console.log(err);
-            } else{
-                console.log(data);
-            }
-        });
-    }
-});
+// fs.readFile("./contents/renamedFile.txt", "utf-8", (err,data)=>{
+//     if(err){
+//         console.log(err);
+//     } else{
+//         fs.appendFile(
+//             "./contents/renamedFile.txt",
+//             "Checking Synchronous Process",
+//             (err)=>{console.log(err);}
+//         );
+//         fs.readFile("./contents/renamedFile.txt", "utf-8",(err,data)=>{
+//             if(err){
+//                 console.log(err);
+//             } else{
+//                 console.log(data);
+//             }
+//         });
+//     }
+// });
 
-console.log("after");
+// console.log("after");
+
+fs.unlink("./contents/renamedFile.txt",(err)=>{
+    if(!err)console.log("Deleted Successfully")
+});

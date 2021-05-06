@@ -1,1 +1,0 @@
-We are learning Node.js We learnt javascriptChecking Synchronous Process
