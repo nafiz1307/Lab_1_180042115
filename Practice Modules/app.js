@@ -1,4 +1,4 @@
-const server = require('./http-module');
+const server = require('../http-module');
 // console.log(server);
 
 server.server.listen(7777);
