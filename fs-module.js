@@ -60,7 +60,7 @@ const fs = require("fs");
 //         fs.appendFile(
 //             "./contents/renamedFile.txt",
 //             "Checking Synchronous Process",
-//             (err)=>{console.log(err);}
+//             (err)=>if(err){console.log(err);}
 //         );
 //         fs.readFile("./contents/renamedFile.txt", "utf-8",(err,data)=>{
 //             if(err){
